@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+    --bg: #0f0f0f;
+    --primary: #002884;
+    --secondary: #021C4D;
+    --secondary-second: #3065FF;
+    --border: #ccc;
+    --gray: #8594A3;
+    --gray-secondary: #8392A2;
+    --danger-secondary: #F45416;
+    --text: #52677B;
+    --white: #ffffff;
+    --white-blue: #F5F9FE;
+    --font: "Nunito Sans", sans-serif;
+}
+
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+    color: var(--text);
+    background-color: var(--white);
+}
+
+a {
+    text-decoration: none;
+}
+
+#root {
+    display: grid;
+    grid-template-areas:
+        "navbar"
+        "header"
+        "main";
+}
+
+.bg-light {
+    background-color: var(--white) !important;
+}
+
+.text-danger {
+    color: var(--danger-secondary);
+}
+
+.text-color {
+    color: var(--text);
+}
+
+.text-blue {
+    color: var(--primary);
+}
+
+.font-regular {
+    font-size: 16px;
+}
+
+.font-sm {
+    font-size: 14px;
+}
+
+/* Col rigth */
+.app-header {
+    grid-area: header;
+    color: var(--secondary);
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+header p {
+    font-size: 48px;
+}
+
+
+.app-main {
+    grid-area: main;
+    height: calc(100vh - 266px);
+}
+
+
+.border-top-left {
+    border-top-left-radius: 120px;
+}
+
+.border-bottom-right {
+    border-bottom-right-radius: 80px;
+}
+
+.bg-az-color {
+    background: #182848;
+}
+
+.bg-az-color-1 {
+    background: #304a87;
+}
+
+.bg-light-blue {
+    background: #eff5fb;
+}
+
+.bg-az {
+    background: linear-gradient(90deg, #304a87 0%, #182848 100%);
+}
+
+/* BUTTONS */
+.btn {
+    border-radius: 12px;
+    padding: 10px 24px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/** section pago contacto */
+.payment-contact {
+    height: 40%;
+}
+
+.app-main .payment-contact .bg-light {
+    height: 100%;
+}
+
+.payment-icon {
+    background-color: #F2F2F2;
+    width: 145px;
+    height: 135px;
+    margin: 0 auto;
+    border-radius: 1rem;
+}
+
+.payment-icon img {
+    width: 60%;
+}
+
+/** section pago QR  */
+.payment-qr {
+    height: 60%;
+}
+
+.app-main .payment-qr .bg-az {
+    height: 100%;
+}

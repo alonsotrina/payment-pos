@@ -1,0 +1,97 @@
+.main-page {
+    height: calc(100vh - 153px);
+}
+ 
+/*Formualrio de pago PIN */
+.payment-form-pin {
+    height: 100%;
+}
+
+/* content input payment */
+.payment-form-pin .payment-input  {
+    height: 17%;
+}
+
+.payment-form-pin .payment-input .bg-light  {
+    height: 100%;
+}
+
+/* content info payment */
+.payment-form-pin .payment-info {
+    height: 83%;
+    position: relative;
+}
+
+.payment-form-pin .payment-info  .bg-light-blue  {
+    height: 100%;
+}
+
+.payment-data {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    width: 100%;
+    color: var(--secondary);
+}
+
+/** PAGE QR **/ 
+.page-qr .header-page {
+    height: 35vh;
+    color: var(--white);
+}
+
+.page-qr .header-page .bg-az {
+    height: 100%
+}
+
+.page-qr .main-page {
+    height: 65vh;
+}
+
+.page-qr .main-page .bg-light-blue {
+    height: 100%;
+}
+
+/* IMg QR */
+.payment-qr {
+    width: 55%;
+    margin: 0 auto;
+}
+
+.payment-qr img {
+    width: 100%;
+    margin-top: -50px;
+}
+
+/* PAGE success y error */
+.page-response .header-page {
+    height: 60vh;
+    color: var(--white);
+}
+
+.header-page .header-icon-payment {
+    width: 40%;
+    margin: 0 auto;
+}
+.header-page .header-icon-payment img {
+    width: 100%;
+}
+
+
+.bg-succes-dark {
+    background-color: #087738;
+}
+
+.bg-danger-dark {
+    background-color: #EB5757;
+}
+
+.page-response .main-page {
+    height: 40vh;
+}
+
+.main-page .list-group-item {
+     background-color:  transparent;
+     color: var(--white);
+     border-bottom: solid 1px #ffffff3d;
+}
