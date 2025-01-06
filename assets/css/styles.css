@@ -12,6 +12,7 @@
     --text: #52677B;
     --white: #ffffff;
     --white-blue: #F5F9FE;
+    --light-blue: #eff5fb;
     --font: "Nunito Sans", sans-serif;
 }
 
@@ -74,20 +75,28 @@ a {
 .app-header {
     grid-area: header;
     color: var(--secondary);
+    height: 58vh;
 }
 
 header h1 {
-    font-size: 28px;
+    font-size: 40px;
 }
 
+header h2 {
+    font-size: 22px;
+}
+
+
 header p {
-    font-size: 48px;
+    font-size: 44px;
 }
 
 
 .app-main {
     grid-area: main;
-    height: calc(100vh - 266px);
+    height: calc(100vh - 227px);
+    height: 42vh;
+    background-color: yellow;
 }
 
 
@@ -119,17 +128,7 @@ header p {
 .btn {
     border-radius: 12px;
     padding: 10px 24px;
-    font-size: 12px;
     font-weight: bold;
-}
-
-/** section pago contacto */
-.payment-contact {
-    height: 40%;
-}
-
-.app-main .payment-contact .bg-light {
-    height: 100%;
 }
 
 .payment-icon {
@@ -144,11 +143,6 @@ header p {
     width: 60%;
 }
 
-/** section pago QR  */
-.payment-qr {
-    height: 60%;
-}
-
-.app-main .payment-qr .bg-az {
-    height: 100%;
+.navbar-brand {
+    font-size: 22px;
 }

@@ -23,35 +23,33 @@
   <div id="root" class="page-qr">
     <!-- header -->
     <header class="header-page bg-light-blue">
-      <div class="conatiner-fluid bg-az border-bottom-right p-4">
+      <div class="conatiner-fluid h-100 bg-az border-bottom-right p-4">
         <a href="index.html" class="navbar-brand"><i class="bi bi-arrow-left"></i> volver</a>
   
-        <div class="header-title text-center mt-5" data-aos="fade-in" data-aos-duration="1000">
+        <div class="header-title text-center mt-5 px-4">
           <h1 class="fw-light mb-3">Pagar con QR</h1>
-          <h2 class="font-regular fw-light">Apunta con tu cámara al código QR usalo a la compra </h2>
+          <h2 class="fs-4 fw-light">Apunta con tu cámara al código QR usalo a la compra </h2>
         </div>
       </div>
     </header>
 
 
-    <main class="main-page bg-az-color-1">
-      <div class="bg-light-blue border-top-left">
+    <main class="main-page bg-az-color-1 position-relative">
+      <div class="h-100 bg-light-blue border-top-left">
 
         <!--Apoyo visual del QR-->
-        <div class="payment-qr" data-aos="fade-in" data-aos-duration="1000">
-          <img src="assets/img/qr-page.png" alt="">
-        </div>
+        <div class="payment-qr">
+          <img src="assets/img/qr-page.png" alt="img qr" class="mb-4">
 
-        <!-- detalle del pago -->
-        <div class="payment-data d-flex justify-content-between align-items-center px-4">
-          <div class="payment-amount">
-            <h3 class="font-sm fw-light mb-1">Monto a pagar</h3>
-            <h4 class="fs-2 fw-semibold">1.567.890</h4>
+          <div class="d-grid">
+            <a href="generar-qr.html" id="confirmButton" class="btn btn-primary btn-lg" role="button">Generar QR</a>
           </div>
-
-           <!-- Call action -->
-          <a href="generar-qr.html" id="confirmButton" class="btn btn-primary" role="button">Generar QR</a>
         </div>
+      </div>
+
+      <div class="payment-data d-flex justify-content-between align-items-center px-5">
+        <h3 class="fs-2 fw-light mb-1">Monto a pagar</h3>
+        <h4 class="fs-1 fw-semibold">1.567.890</h4>
       </div>
 
     </main>
@@ -64,12 +62,6 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
-      <!-- Animate On Scroll Library -->
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-        AOS.init();
-      </script>
-
 </body>
 
 </html>
